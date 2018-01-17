@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        Log.d(TAG, "Something here.");
+        Log.d(TAG, "Something else.");
     }
 
     @Override

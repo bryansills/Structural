@@ -5,7 +5,8 @@ public class User {
     private String mFirstName;
     private String mMiddleName;
     private String mLastName;
-    private String mAge;
+    private int mAge;
+    private boolean notHungarian;
 
     public String getFirstName() {
         return mFirstName;
@@ -31,11 +32,20 @@ public class User {
         this.mLastName = mLastName;
     }
 
-    public String getAge() {
+    public int getAge() {
         return mAge;
     }
 
-    public void setAge(String mAge) {
+    public void setAge(int mAge) {
         this.mAge = mAge;
     }
+
+    public boolean isNotHungarian() {
+        return notHungarian;
+    }
+
+    public void setNotHungarian(boolean notHungarian) {
+        this.notHungarian = notHungarian;
+    }
+
 }

@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName;
 public class NetworkUser {
 
     @SerializedName("first_name") private String mFirstName;
-    @SerializedName("middle_name") private String mMiddleName;
+    @SerializedName("middle_name") protected String mMiddleName;
     @SerializedName("last_name") private String mLastName;
-    @SerializedName("age") private String mAge;
+    @SerializedName("age") private int mAge;
 
     public String getFirstName() {
         return mFirstName;
@@ -33,11 +33,11 @@ public class NetworkUser {
         this.mLastName = mLastName;
     }
 
-    public String getAge() {
+    public int getAge() {
         return mAge;
     }
 
-    public void setAge(String mAge) {
+    public void setAge(int mAge) {
         this.mAge = mAge;
     }
 }
